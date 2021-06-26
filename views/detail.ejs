@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>详情页面</title>
+   <%- include head %>
+  </head>
+  <body>
+    <%- include('bar', {username:username}) %>
+
+      <div class="detail">
+           <div class="title"><%= item.title %></div>
+           <div class="desc">
+               <span>添加人员:<%= item.username %></span>
+               <span>添加时间:<%= item.time %></span>
+           </div>
+           <div class="content"><%- item.content %></div>
+      </div>
+
+
+  </body>
+</html>
